@@ -3,8 +3,8 @@
 assignment operator and equality operator. 
 SOLUTION :-
 */
-#include <iostream>
 #include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Triangle
@@ -98,24 +98,21 @@ int main()
 	
 	cout << "Enter the sides of second triangle: " << endl;
 	cin >> M >> N >> O;
-	Triangle t2(M,N,O);
-	if (m=M,N,0)
-    {
-        cout << "The triangles are equal." << endl;
-    }
-    else if (n=M,N,O)
-    {
-        cout << "The triangles are equal." << endl;
-    }
+	int arr[]={m,n,o};
+	int y = sizeof(arr) / sizeof(arr[0]);
+    	sort(arr, arr + y);
+    	m=arr[1];
+    	n=arr[2];
+    	o=arr[0];
     
-    else if (O=M,N,O)
+	Triangle t2(m,n,o);
+	if (t1 == t2)
     {
-        cout << "The triangles are equal." << endl;
+        cout << "The triangles are equal.\n";
     }
-    
     else
     {
-        cout << "The triangles are not equal." << endl;
+        cout << "The triangles are not equal.\n";
     }
 
     return 0;
