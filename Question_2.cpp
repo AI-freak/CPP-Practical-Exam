@@ -20,7 +20,7 @@ public:
 int main()
 {
     ofstream f2;
-    f2.open("output.txt");
+    f2.open("Question_2output.txt");
 
     for (int i = 1; i < 6; i++)
     {
