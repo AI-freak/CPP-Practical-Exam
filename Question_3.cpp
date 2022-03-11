@@ -90,19 +90,29 @@ int main()
 		cout << "Invalid option " << endl << endl << endl;
 	}
 	
-	float m,n,o;
+	float m,n,o,M,N,O;
 	cout << "TO CHECK EQUALITY OF TWO TRIANGLES." << endl;
     cout << "Enter the sides of first triangle: " << endl;
 	cin >> m >> n >> o;
 	Triangle t1(m,n,o);
 	
 	cout << "Enter the sides of second triangle: " << endl;
-	cin >> m >> n >> o;
-	Triangle t2(m,n,o);
-	if (t1 == t2)
+	cin >> M >> N >> O;
+	Triangle t2(M,N,O);
+	if (m=M,N,0)
     {
         cout << "The triangles are equal." << endl;
     }
+    else if (n=M,N,O)
+    {
+        cout << "The triangles are equal." << endl;
+    }
+    
+    else if (O=M,N,O)
+    {
+        cout << "The triangles are equal." << endl;
+    }
+    
     else
     {
         cout << "The triangles are not equal." << endl;
